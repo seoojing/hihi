@@ -656,6 +656,9 @@ a4 { font-weight:bold;
 </a>
 
 <!--설명글 -->
+	<audio id="beep">
+		<source src="beep.mp3" type="audio/mpeg">
+	</audio>
 
 
 <!-- Image 3 -->
@@ -1065,6 +1068,8 @@ window.onmousemove = function(){
 			soun10.style.display = "inline";
 			soun11.style.display = "inline";
 		on = false;}
+			soun11.onclick = function(){
+		beep.play();}	
 	tada8.onclick = function(){
 		tada8.style.display = "none";
 			tada4.style.display = "inline";
